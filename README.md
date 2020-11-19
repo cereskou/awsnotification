@@ -1,7 +1,11 @@
 # awsnotification
 Post message to Microsoft Teams Channel when received a SNS event.
 
-**AWS Lambda Function**
+# Architecture
+![architecture](https://github.com/cereskou/awsnotification/blob/main/images/arch.png)
+
+
+# AWS Lambda Function
 ## Create Lambda Function
 gobuild.cmd -> function.zip
 <br>
