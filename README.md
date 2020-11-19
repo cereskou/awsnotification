@@ -11,7 +11,7 @@ create a new Lambda function named "**AWStoTeams**"
 1. Click ... Button of Channel and Select Connectors.<br>
 ![popupmenu](https://github.com/cereskou/awsnotification/blob/main/images/popupmenu.png)
 
-2. Incoming WebHook config<br>
+2. Incoming WebHook configure<br>
 ![incomingwebhook](https://github.com/cereskou/awsnotification/blob/main/images/webhook.png)
 
 3. Create a new WebHook<br>
