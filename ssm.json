@@ -1,0 +1,70 @@
+{
+	"webhooks": [{
+            "topic": "job-failed-alert",
+            "service": "batch",
+			"description": "ジョブは失敗しました",
+			"url": "https://outlook.office.com/webhook/dummydummy/IncomingWebhook/dummydummy",
+			"message": {
+				"title": "ジョブは失敗しました"
+			},
+			"buttons": [{
+				"name": "詳細情報",
+				"type": "OpenUri",
+				"targets": [{
+					"os": "default",
+					"uri": "https://dummy-region.console.aws.amazon.com/batch/v2/home?region=<REGION>#jobs/detail/<JOBID>"
+				}]
+			}]
+		},
+		{
+			"topic": "batch-codepipeline",
+            "service": "codepipeline",
+			"description": "自動ビルド通知",
+			"url": "https://outlook.office.com/webhook/dummydummy/IncomingWebhook/dummydummy2",
+			"message": {
+				"title": "自動ビルド通知"
+			},
+			"buttons": [{
+				"name": "実行概要",
+				"type": "OpenUri",
+				"targets": [{
+					"os": "default",
+					"uri": "https://dummy-region.console.aws.amazon.com/codesuite/codepipeline/pipelines/<PIPELINE>/executions/<EXECUTION-ID>/timeline?region=<REGION>"
+				}]
+			}]
+		},
+		{
+			"topic": "service-codepipeline",
+            "service": "codepipeline",
+			"description": "自動ビルド通知",
+			"url": "https://outlook.office.com/webhook/dummydummy/IncomingWebhook/dummydummy2",
+			"message": {
+				"title": "自動ビルド通知"
+			},
+			"buttons": [{
+				"name": "実行概要",
+				"type": "OpenUri",
+				"targets": [{
+					"os": "default",
+					"uri": "https://dummy-region.console.aws.amazon.com/codesuite/codepipeline/pipelines/<PIPELINE>/executions/<EXECUTION-ID>/timeline?region=<REGION>"
+				}]
+			}]
+		}
+	],
+	"environments": [{
+			"prefix": "deve-",
+			"name": "【開発環境】",
+			"themecolor": "#007800"
+		},
+		{
+			"prefix": "testing-",
+			"name": "【評価環境】",
+			"themecolor": "#FF6600"
+		},
+		{
+			"prefix": "prod-",
+			"name": "【本番環境】",
+			"themecolor": "#00008B"
+		}
+	]
+}
