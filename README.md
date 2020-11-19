@@ -96,7 +96,7 @@ Subscription protocol LAMBDA -> **AWStoTeams**
 3. codepipeline build failed<br>
 ![cp failed](https://github.com/cereskou/awsnotification/blob/main/images/cp-failed.png)
 
-click button 実行概要 will open a browser to show detail informatio of the build job.<br>
+click button 実行概要 will open a browser to show detail information of the build job.<br>
 
 4. view buiid details<br>
 ![cp detail](https://github.com/cereskou/awsnotification/blob/main/images/cp-detail.png)
