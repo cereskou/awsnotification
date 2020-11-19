@@ -89,7 +89,7 @@ func Handler(ctx context.Context, event events.SNSEvent) error {
 	sess, err := session.NewSession(&aws.Config{
 		Region: aws.String(region),
 	})
-	//パラメター名：SyncTargetGroup (Fixed))
+	//パラメター名：TeamsSettings (Fixed))
 	ssmkey := getSsmKey()
 	svc := ssm.New(sess)
 	result, err := svc.GetParameter(&ssm.GetParameterInput{
