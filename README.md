@@ -8,16 +8,16 @@ gobuild.cmd -> function.zip
 create a new Lambda function named "**AWStoTeams**"
 
 ## Create a WebHook in Teams Channel
-1. Click ... Button of Channel and Select Connectors.
+1. Click ... Button of Channel and Select Connectors.<br>
 ![popupmenu](https://github.com/cereskou/awsnotification/blob/main/images/popupmenu.png)
 
-2. Incoming WebHook config
+2. Incoming WebHook config<br>
 ![incomingwebhook](https://github.com/cereskou/awsnotification/blob/main/images/webhook.png)
 
-3. Create a new WebHook
+3. Create a new WebHook<br>
 ![incomingwebhook](https://github.com/cereskou/awsnotification/blob/main/images/incoming.png)
 
-4. Copy URL to Clipboard.
+4. Copy URL to Clipboard.<br>
 ![incomingwebhook](https://github.com/cereskou/awsnotification/blob/main/images/incoming-done.png)
 
 ## Setup ssm.json
@@ -87,15 +87,15 @@ Subscription protocol LAMBDA -> **AWStoTeams**
 1. aws batch execute failed. -> SNS
 
 ## Demo
-1. when aws batch failed
+1. when aws batch failed<br>
 ![batch failed](https://github.com/cereskou/awsnotification/blob/main/images/batch-failed.png)
 
-2. codepipeline build success
+2. codepipeline build success<br>
 ![cp success](https://github.com/cereskou/awsnotification/blob/main/images/cp-success.png)
 
-3. codepipeline build failed
+3. codepipeline build failed<br>
 ![cp failed](https://github.com/cereskou/awsnotification/blob/main/images/cp-failed.png)
 
-4. view buidl details
+4. view buidl details<br>
 ![cp detail](https://github.com/cereskou/awsnotification/blob/main/images/cp-detail.png)
 
